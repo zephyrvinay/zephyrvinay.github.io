@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#resume").hover(
+        function() {
+      $( this ).append( $( "<span> ***</span>" ) );
+        }, function() {
+      $( this ).find( "span:last" ).remove(); }
+        );
+    })
+  </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+
+        <h3 id='heading'>Vinay Prabhushankar</h3>
+
+        </div>
+    </div>
+  </div>
+ <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+             
+        <h5 id="AboutMe">About Me</h5>
+        <p>I want to become a better coder by learning Data Structures and Algorithms</p>
+        <a id="resume" href="https://www.linkedin.com/in/vinayprabhushankar">Click here For my Resume</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+        <h5 class='SubSection'>Projects</h5>
+        <a class="button" href="#">Click for Full Size </a>
+        <div class="ten column" style="margin-top: 5%">
+        <img id="pic1" src="http://www.motorcycle-usa.com/wp-content/uploads/2016/02/Triton-900-Garage-Brewed-Mo.jpg" alt="moto1" height="300" width="300">
+        <img id="pic2" src="http://www.motorcycle-usa.com/wp-content/uploads/2016/02/MotoUSA-Issue-13-2016.jpg" alt="moto1" height="300" width="300">
+             
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        
+        <h5 class='SubSection'>Contact</h5>
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Vinay …" id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>  
+      </div>
+    </div>
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
